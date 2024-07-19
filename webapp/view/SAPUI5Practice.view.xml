@@ -1,0 +1,19 @@
+<mvc:View controllerName="dev.sapui5.controller.SAPUI5Practice"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Button 
+                id="holaBtn" 
+                text="{i18n>showHelloButtonText}" 
+                press=".onShowHello"/>
+
+            <Input
+                id="InHW"
+                value="{/recipient/name}"
+                description="Hola {/recipient/name}"
+                valueLiveUpdate="true"
+                width="60%"/>
+        </content>
+    </Page>
+</mvc:View>
