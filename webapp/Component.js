@@ -13,6 +13,7 @@ sap.ui.define([
 
         return UIComponent.extend("dev.sapui5.Component", {
             metadata: {
+                interfaces: ["sap.ui.core.IAsyncContentCreation"],
                 manifest: "json"
             },
 
