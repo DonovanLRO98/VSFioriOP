@@ -57,6 +57,10 @@
         "settings": {
           "bundleName": "dev.sapui5.i18n.i18n"
         }
+      },
+      "invoice": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "Facturas.json"
       }
     },
     "resources": {

@@ -23,6 +23,19 @@ function (Controller,MessageToast,JSONModel,ResourceModel) {
              });
              this.getView().setModel(i18nModel, "i18n");
 
+             const oData2 = {
+                recipient : {
+                   nombre : "oData2"
+                }
+             };
+             const oModel2 = new JSONModel(oData2);
+             this.getView().setModel(oModel2);
+
+             const i18nModel2 = new ResourceModel({
+                bundleName: "dev.sapui5.i18n.i18n"
+             });
+             this.getView().setModel(i18nModel, "i18n2");
+
         },
 
         onShowHello(){
